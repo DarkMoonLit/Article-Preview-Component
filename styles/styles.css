@@ -1,0 +1,149 @@
+:root {
+    --dark-grayish-blue: hsl(217, 19%, 35%);
+    --dark-blue: hsl(214, 17%, 51%);
+    --grayish-blue: hsl(212, 23%, 69%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Manrope';
+    font-size: 1.3rem;
+    background-color: var(--light-grayish-blue);
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 1.5rem;
+}
+
+.container > img {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+
+.text-container {
+    padding: 2rem;
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+    padding-bottom: 1rem;
+}
+
+p {
+    font-weight: 500;
+    color: var(--dark-blue);
+}
+
+.text-description {
+    padding-bottom: 3rem;
+}
+
+.container .author img {
+    border-radius: 50%;
+    width: 5rem;
+    margin-right: 2rem;
+}
+
+.author {
+    display: inline-flex;
+}
+
+.author-name {
+    font-weight: 700;
+    color: var(--dark-grayish-blue);
+}
+
+.author-preview {
+    background-color: var(--light-grayish-blue);
+    border-radius: 100%;
+    align-self: center;
+    margin-left: 8rem;
+}
+
+button {
+    border-radius: 100%;
+    width: 1.5rem;
+    height: 1rem;
+    padding: 1rem;
+    border: none;
+    position: absolute;
+}
+
+.author-social-media {
+    background-color: var(--dark-grayish-blue);
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    display: flex;
+    padding: 2rem;
+    padding-top: 2rem;
+    position: absolute;
+    width: 87%;
+    justify-content: flex-start;
+    align-items: center;
+    top: 117%;
+
+}
+
+.icon {
+    width: 2rem;
+    margin-left: 1rem;
+}
+
+.share {
+    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.got-clicked {
+    background-color: var(--grayish-blue);
+
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin: 2rem 1rem;
+    }
+
+    .author-preview {
+        margin-left: 5rem;
+    }
+
+    .container .author img {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .author-description {
+        font-size: 1rem;
+    }
+
+    
+}
+
+@media screen and (min-width: 500px) and (max-width: 950px) {
+    .container {
+        margin: 5rem 2rem;
+    }
+
+}
+
